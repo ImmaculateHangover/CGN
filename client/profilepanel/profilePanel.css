@@ -4,9 +4,10 @@
   width: 320px;
   min-height: 600px;
   height: 100vh;
-  background-color: #666666;
+  background: url(http://pixelkit.com/free-ui-kits/dark-velvet/images/comment-bg3.png) repeat;
   color: white;
   position: fixed;
+  box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.3);
 }
 
 .profile-tile {
@@ -14,6 +15,17 @@
  display: flex;
  flex-direction: column;
  align-items: center;
+ margin-bottom: 50px;
+}
+
+.profile-header {
+  border-bottom-color: rgb(149, 157, 166);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+  background: url(http://pixelkit.com/free-ui-kits/dark-velvet/images/comment-bg2.png) repeat;
+}
+
+.profile-header > h3 {
+  font-weight: 400;
 }
 
 .avatar-container > img {
@@ -29,14 +41,57 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    border-width: 4px;
+    border-color: #666666;
+    border-style: solid;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.26);
 }
 
 .friends-tile {
   overflow: auto;
   border: none;
+  padding-left: 40px;
 }
 
 .friends-tile img {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.givenName {
+  padding-top: 12px;
+  font-size: 16px;
+}
+
+.username {
+  font-size: 14px;
+}
+
+.friend-avatar-container {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10%;
+  border-width: 4px;
+  border-color: #666666;
+  border-style: solid;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+}
+
+.time-label {
+  color: #c4c4c4;
+}
+
+.friend-card {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.friend-info {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
 }
