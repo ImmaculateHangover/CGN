@@ -1,3 +1,11 @@
-<div className="recentGames-container" ng-repeat="game in games">
-  <img className="recentGames.img" src={{game.art}}>
+<div>My Recent Games</div>
+<div class="recentGames-container">
+  <div class="recentGames-container-container">
+    <div ng-repeat="game in games">
+      <div>
+        <span> {{game.title}} </span>
+        <img class="recentGames-img" ng-src={{game.art}}>
+      </div>
+    </div>
+  </div>
 </div>

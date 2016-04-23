@@ -63,6 +63,11 @@ body {
   border-bottom-color: #fff;
 }
 
+.profilePanel {
+  display: inline-block;
+  float: left;
+
+}
 /*@media (min-width: 768px) {
   .masthead-brand {
     float: left;
