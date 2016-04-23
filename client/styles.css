@@ -111,3 +111,9 @@ button{
   background: -o-linear-gradient(bottom, #073906 0%, #154413 100%);
   background: linear-gradient(bottom, #073906 0%, #154413 100%);
 }
+
+.profilePanel {
+  display: inline-block;
+  float: left;
+
+}

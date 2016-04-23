@@ -95,3 +95,8 @@
   align-items: start;
   text-align: left;
 }
+
+.friends-avatar {
+  width: 60px;
+  height: 60px;
+}
