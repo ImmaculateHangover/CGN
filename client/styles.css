@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Cabin;
+    src: url(https://www.google.com/fonts#UsePlace:use/Collection:Cabin:400,500,600);
+}
+
 body {
   height: 100vh;
   padding-top: 0px !important;
+  font-family: 'Cabin', Helvetica, sans-serif;
 }
 .main {
   display: flex;
@@ -63,16 +69,51 @@ body {
   border-bottom-color: #fff;
 }
 
+button{
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  height: 39px;
+  margin: 10px 0;
+  color: white;
+  font-size: 13px;
+  box-shadow: 2px 2px 30px  #000;
+  text-shadow: 1px 1px #1F1F1F;
+}
+
+.green_btn{
+  box-shadow: inset 1px 1px 4px -2px #FFF, 2px 2px 3px  #1F1F1F;
+  background: -webkit-linear-gradient(bottom, #284627 0%, #14860E 100%);
+  background: -moz-linear-gradient(bottom, #284627 0%, #14860E 100%);
+  background: -ms-linear-gradient(bottom, #284627 0%, #14860E 100%);
+  background: -o-linear-gradient(bottom, #284627 0%, #14860E 100%);
+  background: linear-gradient(bottom, #284627 0%, #14860E 100%);
+  float: right;
+}
+
+.green_btn:hover, green_btn:focus{
+  box-shadow: inset 1px 1px 4px -2px #FFF, 2px 2px 3px  #1F1F1F, inset 0 0 15px 2px #14860E;
+  background: -webkit-linear-gradient(bottom, #285627 0%, #14960E 100%);
+  background: -moz-linear-gradient(bottom, #285627 0%, #14960E 100%);
+  background: -ms-linear-gradient(bottom, #285627 0%, #14960E 100%);
+  background: -o-linear-gradient(bottom, #285627 0%, #14960E 100%);
+  background: linear-gradient(bottom, #285627 0%, #14960E 100%);
+}
+
+.green_btn:active{
+  box-shadow: 1px 1px 4px -2px #6C6C6C, inset 1px 1px 3px #052005;
+  background: -webkit-linear-gradient(bottom, #073906 0%, #154413 100%);
+  background: -moz-linear-gradient(bottom, #073906 0%, #154413 100%);
+  background: -ms-linear-gradient(bottom, #073906 0%, #154413 100%);
+  background: -o-linear-gradient(bottom, #073906 0%, #154413 100%);
+  background: linear-gradient(bottom, #073906 0%, #154413 100%);
+}
+
 .profilePanel {
   display: inline-block;
   float: left;
 
 }
-/*@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: left;
-  }
-}*/
