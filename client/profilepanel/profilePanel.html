@@ -6,7 +6,7 @@
   </div>
   <div class="friends-tile">
     <div ng-repeat="friend in friends">
-        <img src="{{friend.avatar}}" />
+        <img class="friends-avatar" ng-src="{{friend.avatar}}" />
         <div>{{friend.username}}</div>
         <div>{{friend.lastActivity.fromNow()}}</div>
     </div>
