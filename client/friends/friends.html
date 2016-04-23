@@ -1,0 +1,12 @@
+<div class="friends-panel">
+  <!-- Add filter button -->
+  <button ng-click="order('lastActivity')" class="btn filter-lastActivity-button">Sort By Last Active</button>
+  <!-- Tiles -->
+  <div class="friends-container">
+      <div ng-repeat="friend in friends">
+        <img src="{{friend.avatar}}" />
+        <div>{{friend.username}}</div>
+        <div>{{friend.lastActivity.fromNow()}}</div>
+      </div>
+   </div> 
+</div>

@@ -7,6 +7,7 @@ angular.module('CGN.requests', [])
         method: 'GET',
         url: '/api/me/friends',
       }).then((response) => response.data);
+      // console.log(response);
     },
     getProfile() {
       return $http({
