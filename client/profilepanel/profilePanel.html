@@ -1,8 +1,8 @@
 <div ng-controller='ProfilePanelController' class="profile-panel">
   <div class="profile-tile">
-    <img src="{{avatar}}" />
-    <div><span class="username">{{username}}</span></div>
+    <div class='avatar-container'><img src="{{avatar}}" /></div>
     <div><span class="givenName">{{givenName}}</span></div>
+    <div><span class="username">({{username}})</span></div>
   </div>
   <div class="friends-tile">
     <div ng-repeat="friend in friends">
